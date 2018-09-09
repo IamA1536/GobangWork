@@ -8,6 +8,7 @@ import com.TeamWork.Data.Global.Data;
 
 /**
  * 代表AI操作的AI类
+ *
  * @author A
  * @version 1.3
  * @since 10.0
@@ -23,15 +24,16 @@ public class Brain implements Data, BaseBoard_Data {
      * AI类的无参构造函数
      */
 
-    public Brain(){
+    public Brain() {
 
     }
 
     /**
-     *  AI类的构造函数
-     * @param bd
-     * @param level
-     * @param node
+     * AI类的构造函数
+     *
+     * @param bd    传入代表AI视角的面板
+     * @param level 算法搜索的层次
+     * @param node  查找的棋子的节点数
      */
 
     public Brain(Board bd, int level, int node) {
@@ -40,11 +42,24 @@ public class Brain implements Data, BaseBoard_Data {
         this.node = node;
     }
 
+    /**
+     * AI落子的方法
+     *
+     * @param i 代表不同操作的参数，Easy(只使用估值算法)，Hard(使用搜索树与估值算法)
+     * @return 代表落子位置的一维数组，0代表X坐标，1代表Y坐标
+     */
+
     public int[] AIMove(int i) {
         if (i == Easy) return findOneBestStep();
         else if (i == Hard) return findTreeBestStep();
         return null;
     }
+
+    /**
+     * 返回棋子在只使用估值算法的落子方法
+     *
+     * @return 代表落子位置的一维数组，0代表X坐标，1代表Y坐标
+     */
 
     private int[] findOneBestStep() {
         Piece[] arr = bd.getSortedChess(bd.getPlayer());
@@ -53,6 +68,11 @@ public class Brain implements Data, BaseBoard_Data {
         return result;
     }
 
+    /**
+     * 返回棋子在使用估值与搜索树算法的落子方法
+     *
+     * @return 代表落子位置的一维数组，0代表X坐标，1代表Y坐标
+     */
 
     private int[] findTreeBestStep() {
         alpha_beta(0, bd, -INFINITY, INFINITY);
@@ -60,6 +80,14 @@ public class Brain implements Data, BaseBoard_Data {
         return result;
     }
 
+    /**
+     * alpha-beta剪枝搜索算法
+     * @param depth 当前深度
+     * @param board 当前棋局情况
+     * @param alpha alpha支
+     * @param beta beta支
+     * @return 分支
+     */
 
     public int alpha_beta(int depth, Board board, int alpha, int beta) {
         if (depth == level || board.isGameOver() != 0) {
