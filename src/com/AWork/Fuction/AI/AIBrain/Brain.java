@@ -7,7 +7,7 @@ import com.TeamWork.Data.AI_Info.Level;
 import com.TeamWork.Data.Global.Data;
 
 /**
- * ä»£è¡¨AIæ“ä½œçš„AIç±»
+ * ´ú±íAI²Ù×÷µÄAIÀà
  *
  * @author A
  * @version 1.3
@@ -21,7 +21,7 @@ public class Brain implements Data, BaseBoard_Data {
     private int node;
 
     /**
-     * AIç±»çš„æ— å‚æ„é€ å‡½æ•°
+     * AIÀàµÄÎŞ²Î¹¹Ôìº¯Êı
      */
 
     public Brain() {
@@ -29,11 +29,11 @@ public class Brain implements Data, BaseBoard_Data {
     }
 
     /**
-     * AIç±»çš„æ„é€ å‡½æ•°
+     * AIÀàµÄ¹¹Ôìº¯Êı
      *
-     * @param bd    ä¼ å…¥ä»£è¡¨AIè§†è§’çš„é¢æ¿
-     * @param level ç®—æ³•æœç´¢çš„å±‚æ¬¡
-     * @param node  æŸ¥æ‰¾çš„æ£‹å­çš„èŠ‚ç‚¹æ•°
+     * @param bd    ´«Èë´ú±íAIÊÓ½ÇµÄÃæ°å
+     * @param level Ëã·¨ËÑË÷µÄ²ã´Î
+     * @param node  ²éÕÒµÄÆå×ÓµÄ½ÚµãÊı
      */
 
     public Brain(Board bd, int level, int node) {
@@ -43,10 +43,10 @@ public class Brain implements Data, BaseBoard_Data {
     }
 
     /**
-     * AIè½å­çš„æ–¹æ³•
+     * AIÂä×ÓµÄ·½·¨
      *
-     * @param i ä»£è¡¨ä¸åŒæ“ä½œçš„å‚æ•°ï¼ŒEasy(åªä½¿ç”¨ä¼°å€¼ç®—æ³•)ï¼ŒHard(ä½¿ç”¨æœç´¢æ ‘ä¸ä¼°å€¼ç®—æ³•)
-     * @return ä»£è¡¨è½å­ä½ç½®çš„ä¸€ç»´æ•°ç»„ï¼Œ0ä»£è¡¨Xåæ ‡ï¼Œ1ä»£è¡¨Yåæ ‡
+     * @param i ´ú±í²»Í¬²Ù×÷µÄ²ÎÊı£¬Easy(Ö»Ê¹ÓÃ¹ÀÖµËã·¨)£¬Hard(Ê¹ÓÃËÑË÷Ê÷Óë¹ÀÖµËã·¨)
+     * @return ´ú±íÂä×ÓÎ»ÖÃµÄÒ»Î¬Êı×é£¬0´ú±íX×ø±ê£¬1´ú±íY×ø±ê
      */
 
     public int[] AIMove(int i) {
@@ -56,9 +56,9 @@ public class Brain implements Data, BaseBoard_Data {
     }
 
     /**
-     * è¿”å›æ£‹å­åœ¨åªä½¿ç”¨ä¼°å€¼ç®—æ³•çš„è½å­æ–¹æ³•
+     * ·µ»ØÆå×ÓÔÚÖ»Ê¹ÓÃ¹ÀÖµËã·¨µÄÂä×Ó·½·¨
      *
-     * @return ä»£è¡¨è½å­ä½ç½®çš„ä¸€ç»´æ•°ç»„ï¼Œ0ä»£è¡¨Xåæ ‡ï¼Œ1ä»£è¡¨Yåæ ‡
+     * @return ´ú±íÂä×ÓÎ»ÖÃµÄÒ»Î¬Êı×é£¬0´ú±íX×ø±ê£¬1´ú±íY×ø±ê
      */
 
     private int[] findOneBestStep() {
@@ -69,9 +69,9 @@ public class Brain implements Data, BaseBoard_Data {
     }
 
     /**
-     * è¿”å›æ£‹å­åœ¨ä½¿ç”¨ä¼°å€¼ä¸æœç´¢æ ‘ç®—æ³•çš„è½å­æ–¹æ³•
+     * ·µ»ØÆå×ÓÔÚÊ¹ÓÃ¹ÀÖµÓëËÑË÷Ê÷Ëã·¨µÄÂä×Ó·½·¨
      *
-     * @return ä»£è¡¨è½å­ä½ç½®çš„ä¸€ç»´æ•°ç»„ï¼Œ0ä»£è¡¨Xåæ ‡ï¼Œ1ä»£è¡¨Yåæ ‡
+     * @return ´ú±íÂä×ÓÎ»ÖÃµÄÒ»Î¬Êı×é£¬0´ú±íX×ø±ê£¬1´ú±íY×ø±ê
      */
 
     private int[] findTreeBestStep() {
@@ -81,12 +81,12 @@ public class Brain implements Data, BaseBoard_Data {
     }
 
     /**
-     * alpha-betaå‰ªææœç´¢ç®—æ³•
-     * @param depth å½“å‰æ·±åº¦
-     * @param board å½“å‰æ£‹å±€æƒ…å†µ
-     * @param alpha alphaæ”¯
-     * @param beta betaæ”¯
-     * @return åˆ†æ”¯
+     * alpha-beta¼ôÖ¦ËÑË÷Ëã·¨
+     * @param depth µ±Ç°Éî¶È
+     * @param board µ±Ç°Æå¾ÖÇé¿ö
+     * @param alpha alphaÖ§
+     * @param beta betaÖ§
+     * @return ·ÖÖ§
      */
 
     public int alpha_beta(int depth, Board board, int alpha, int beta) {
@@ -134,7 +134,7 @@ public class Brain implements Data, BaseBoard_Data {
                 }
                 if (alpha >= beta) {
                     score = alpha;
-                    // System.out.println(" betaå‰ªæ");
+                    // System.out.println(" beta¼ôÖ¦");
                     return score;
                 }
             } else {// MIN
@@ -143,7 +143,7 @@ public class Brain implements Data, BaseBoard_Data {
                 }
                 if (alpha >= beta) {
                     score = beta;
-                    // System.out.println(" alphaå‰ªæ");
+                    // System.out.println(" alpha¼ôÖ¦");
                     return score;
                 }
             }
