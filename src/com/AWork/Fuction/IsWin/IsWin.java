@@ -19,7 +19,7 @@ public class IsWin implements Data {
 
     public static boolean Checkborad(int n, int[][] piece) {
         boolean result = false;
-        int c = 0;
+        int c;
         for (int i = 0; i < RC; i++)
             for (int j = 0; j < RC; j++)
                 if (piece[i][j] != 0) {
