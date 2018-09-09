@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
  * 这是代表AI视角的面板类
  * @author A
  * @version 1.6
- * @since 10.0
+ * @since 1.0
  *
  */
 

@@ -1,10 +1,10 @@
 package com.TeamWork.Data.AI_Info;
 
 /**
- * 用于查看棋盘信息
+ * 用于查看棋盘信息的枚举类
  * @author A
  * @version 1.0
- *
+ * @since 1.0
  */
 
 public enum Level {

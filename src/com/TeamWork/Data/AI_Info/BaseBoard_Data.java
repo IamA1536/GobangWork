@@ -1,5 +1,12 @@
 package com.TeamWork.Data.AI_Info;
 
+/**
+ * 棋盘权值的基本数据
+ * @author A
+ * @version 1.0
+ * @since 1.0
+ */
+
 public interface BaseBoard_Data {
     int[][] position = {
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },

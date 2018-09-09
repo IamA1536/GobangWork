@@ -1,7 +1,7 @@
 package com.TeamWork.Data.Global;
 
 /**
- * 这是五子棋的数据
+ * 这是五子棋的基本数据
  * @author TeamWork
  * @version 1.0
  */

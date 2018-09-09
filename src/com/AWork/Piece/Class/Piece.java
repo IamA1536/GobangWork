@@ -4,10 +4,9 @@ import com.TeamWork.Data.Global.Data;
 
 /**
  * 这是棋子类
- *
  * @author A
  * @version 1.1
- * @since 10.0
+ * @since 1.0
  */
 
 public class Piece implements Comparable<Piece>, Data {

@@ -11,7 +11,7 @@ import com.TeamWork.Data.Global.Data;
  *
  * @author A
  * @version 1.3
- * @since 10.0
+ * @since 1.0
  */
 public class Brain implements Data, BaseBoard_Data {
     private Board bd;
@@ -89,7 +89,7 @@ public class Brain implements Data, BaseBoard_Data {
      * @return ∑÷÷ß
      */
 
-    public int alpha_beta(int depth, Board board, int alpha, int beta) {
+    private int alpha_beta(int depth, Board board, int alpha, int beta) {
         if (depth == level || board.isGameOver() != 0) {
             Piece[] sorted = board.getSorted();
             Piece move = board.getData()[sorted[0].getX()][sorted[0].getY()];
