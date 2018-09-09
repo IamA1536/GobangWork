@@ -6,6 +6,10 @@ import com.TeamWork.Data.Global.Data;
 
 import java.util.Scanner;
 
+/**
+ * 测试用，硬核五子棋类
+ */
+
 public class Test0909 implements Data {
     private Board bd;
     private Brain br;
