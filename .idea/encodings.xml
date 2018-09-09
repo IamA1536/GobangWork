@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/src/com/AWork/Fuction/AI/AIBoard/Board.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/AWork/Fuction/AI/AIBrain/Brain.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/AWork/Piece/Class/Piece.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/TeamWork/Data/AI_Info/Level.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/TeamWork/Data/Global/Data.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

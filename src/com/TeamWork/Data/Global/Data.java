@@ -1,7 +1,7 @@
 package com.TeamWork.Data.Global;
 
 /**
- * 杩欐槸浜斿瓙妫嬬殑鍩烘湰鏁版嵁
+ * 这是五子棋的基本数据
  * @author TeamWork
  * @version 1.0
  */

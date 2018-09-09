@@ -46,7 +46,7 @@ public class Board implements Data, BaseBoard_Data {
     /**
      * 用于AI算法中的深度拷贝
      * @param b 传入被拷贝的面板实例
-     * @exception NullPointerException may in this.
+     * @exception NullPointerException 可能出现传入空棋盘
      */
 
     public Board(Board b) {
