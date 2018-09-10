@@ -10,8 +10,8 @@ public interface Data {
 
     int RC = 15;
     int CENTER = 8;
-    int size = 50;
-    int radius = 25;
+    int size = 40;
+    int radius = 20;
     int blackPiece = 1;
     int whitePiece = 2;
     int emptyPiece = 0;
