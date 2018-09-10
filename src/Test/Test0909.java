@@ -7,7 +7,7 @@ import com.TeamWork.Data.Global.Data;
 import java.util.Scanner;
 
 /**
- * 娴嬭瘯鐢紝纭牳浜斿瓙妫嬬被
+ * 测试用，硬核五子棋类
  */
 
 public class Test0909 implements Data {
@@ -23,7 +23,7 @@ public class Test0909 implements Data {
         bd = new Board();
         br = new Brain(bd, 3, 5);
         bd.start();
-        
+
         while (true) {
             System.out.println("Put a piece(player): ");
             int x = input.nextInt();

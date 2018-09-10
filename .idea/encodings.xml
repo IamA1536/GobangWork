@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/Test/Test0909.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/AWork/Fuction/AI/AIBoard/Board.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/AWork/Fuction/AI/AIBrain/Brain.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/AWork/Piece/Class/Piece.java" charset="GBK" />
