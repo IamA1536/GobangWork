@@ -22,8 +22,8 @@ public class Test0909 implements Data {
         Scanner input = new Scanner(System.in);
         bd = new Board();
         br = new Brain(bd, 3, 5);
-
         bd.start();
+        
         while (true) {
             System.out.println("Put a piece(player): ");
             int x = input.nextInt();
@@ -37,19 +37,15 @@ public class Test0909 implements Data {
                 System.out.println("AI DONE___________________________");
             }
         }
-
     }
 
     private boolean putChess(int x, int y) {
         if (bd.putChess(x, y)) {
-            int winSide = bd.isGameOver();// 判断终局
+            int winSide = bd.isGameOver();
             if (winSide > 0) {
-
-                // 清除
                 bd.reset();
                 return false;
             }
-
             return true;
         }
         return false;
