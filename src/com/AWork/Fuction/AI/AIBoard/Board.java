@@ -177,7 +177,7 @@ public class Board implements Data, BaseBoard_Data {
 
     /**
      * 判断当前棋局情况的方法
-     * @return 代表棋局情况的参数，有Gaming(0),Tied(3).
+     * @return 胜利的棋子，有两种棋子，Gaming(0),Tied(3),.
      */
 
     public int isGameOver() {
@@ -187,15 +187,19 @@ public class Board implements Data, BaseBoard_Data {
             int x = (int) lastStep.getX();
             int y = (int) lastStep.getY();
             if (check(x, y, 1, 0, chess) + check(x, y, -1, 0, chess) >= 4) {
+
                 return chess;
             }
             if (check(x, y, 0, 1, chess) + check(x, y, 0, -1, chess) >= 4) {
+
                 return chess;
             }
             if (check(x, y, 1, 1, chess) + check(x, y, -1, -1, chess) >= 4) {
+
                 return chess;
             }
             if (check(x, y, 1, -1, chess) + check(x, y, -1, 1, chess) >= 4) {
+
                 return chess;
             }
         }

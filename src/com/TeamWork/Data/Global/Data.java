@@ -22,4 +22,7 @@ public interface Data {
 
     int Gaming = 0;
     int Tied = 3;
+
+    int ServerID = 1;
+    int ClientID = 2;
 }
