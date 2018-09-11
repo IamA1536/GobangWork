@@ -117,7 +117,7 @@ public class Brain implements Data, BaseBoard_Data {
                 continue;
             if (sorted[i].getOffense() >= Level.ALIVE_4.getScore()) {
                 System.out.println("Attend to win");
-                score = INFINITY * 2;
+                score = INFINITY + 1;
             } else if (sorted[i].getDefence() >= Level.ALIVE_4.getScore()) {
                 System.out.println("Attend to lose");
                 score = INFINITY;
