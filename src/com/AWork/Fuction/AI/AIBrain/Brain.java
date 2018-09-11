@@ -82,10 +82,11 @@ public class Brain implements Data, BaseBoard_Data {
 
     /**
      * alpha-beta剪枝搜索算法
+     *
      * @param depth 当前深度
      * @param board 当前棋局情况
      * @param alpha alpha支
-     * @param beta beta支
+     * @param beta  beta支
      * @return 分支
      */
 
@@ -116,7 +117,7 @@ public class Brain implements Data, BaseBoard_Data {
                 continue;
             if (sorted[i].getOffense() >= Level.ALIVE_4.getScore()) {
                 System.out.println("Attend to win");
-                score = INFINITY + 1;
+                score = INFINITY * 2;
             } else if (sorted[i].getDefence() >= Level.ALIVE_4.getScore()) {
                 System.out.println("Attend to lose");
                 score = INFINITY;
